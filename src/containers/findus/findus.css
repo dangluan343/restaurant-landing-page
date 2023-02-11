@@ -1,0 +1,76 @@
+.findus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("../../assets/bg.png") no-repeat;
+  background-position: center;
+  padding: 0 15rem;
+}
+.findus__left {
+  flex: 1 1;
+  padding-right: 5rem;
+}
+.findus__description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+  margin: 6.4rem 0 3.2rem;
+}
+.findus__open {
+  margin-bottom: 6.4rem;
+}
+.findus__open_hours {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  /* DCCA87 */
+
+  color: #dcca87;
+}
+.findus__open_time {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+}
+.findus__right {
+  flex: 1 1;
+}
+.findus__right img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1250px) {
+  .findus {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .findus {
+    padding: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+  .findus__left {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .findus {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,20 @@
+.subheading h5 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.subheading h4 {
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 130%;
+  /* or 83px */
+
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}

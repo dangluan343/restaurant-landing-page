@@ -1,0 +1,120 @@
+/* .laurels
+	.laurels__logo
+	.laurels__table
+		.laurels__header
+			.laurels__awards
+			img
+			.laurels__title
+		.laurels__list
+			.laurels__item
+				img
+				div.laurels__content
+					h4.laurels__award_name
+					p.laurels__award__description
+	.laurels__image
+		img */
+.laurels {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  background: url("../../assets/bg.png") no-repeat;
+  background-position: center center;
+}
+/* .laurels__logo{
+    width: 15rem;
+    height: 15rem;
+
+} */
+.laurels__table {
+  flex: 1.3 1 40rem;
+}
+.laurels__header {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+.laurels__awards {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.spoon {
+  width: 4rem;
+  height: 1rem;
+  object-fit: contain;
+}
+.laurels__title {
+  font-weight: 600;
+  font-size: 6.5rem;
+  line-height: 130%;
+  /* or 83px */
+
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.laurels__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.laurels__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex: 1 1 25rem;
+}
+
+.laurels__item img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.laurels__content {
+}
+.laurels__award_name {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.laurels__award__description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* or 28px */
+
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+}
+.laurels__image {
+  flex: 1 1 35rem;
+  text-align: center;
+}
+
+.laurels__image img {
+  width: 80%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 950px) {
+  .laurels {
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+}

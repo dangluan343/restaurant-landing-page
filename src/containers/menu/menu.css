@@ -1,0 +1,118 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.menu__header {
+  text-align: center;
+}
+.menu__special {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+.menu__special-icon {
+  margin: 0.8rem 0;
+}
+.menu__today {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.4rem;
+  line-height: 130%;
+  /* or 83px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.menu__table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__cub__image {
+  flex: 0.3 1 45rem;
+  margin: 0 3rem;
+}
+.menu__cub__image img {
+  width: 100%;
+
+  object-fit: fill;
+}
+.menu__list {
+  width: 35rem;
+}
+
+.menu__table__header {
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 130%;
+  /* or 58px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-bottom: 4.5rem;
+}
+.menu__item {
+}
+/* .menu__item_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+} */
+/* .menu__item__name {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+} */
+/* .menu__item__line {
+  flex: 1 1;
+  border-bottom: 1px solid var(--color-white);
+}
+.menu__item__price {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+.menu__item__type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+} */
+
+@media screen and (max-width: 1200px) {
+  .menu__table {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  .menu__cub__image {
+    flex: 1;
+    width: 100%;
+  }
+  .menu__cub__image img {
+    height: auto;
+  }
+}

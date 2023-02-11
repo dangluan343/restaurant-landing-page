@@ -1,0 +1,229 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 12rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.navbar__logo {
+}
+.navbar__logo img {
+  width: 20rem;
+  height: 5.7rem;
+  object-fit: contain;
+}
+.navbar__links-container {
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.navbar__link {
+  font-family: var(--font-alt);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.navbar__link:hover {
+  color: yellow;
+}
+.navbar__authenticate {
+  font-family: var(--font-alt);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  align-items: center;
+}
+.navbar__login-group {
+  border-right: 1px solid white;
+  padding-right: 2rem;
+}
+
+.navbar__authenticate a {
+  color: white;
+}
+
+.navbar__authenticate > a:last-child {
+  padding-left: 2rem;
+}
+
+.navbar__tablet {
+  display: none;
+}
+
+.navbar__menu-icon,
+.navbar__close-icon {
+  cursor: pointer;
+}
+@media screen and (max-width: 1250px) {
+  .navbar__tablet {
+    display: block;
+    margin-left: 4rem;
+    /* position: relative; */
+  }
+
+  .navbar__menu-icon svg {
+    font-size: 3rem;
+  }
+
+  .navbar__authenticate {
+    margin-left: auto;
+  }
+
+  .navbar__tablet_slide {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--color-black);
+    padding: 3rem 12rem;
+    display: block;
+
+    /* color: white; */
+  }
+
+  .navbar__tablet_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__close-icon svg {
+    font-size: 3rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(78deg) brightness(104%) contrast(102%);
+  }
+
+  .navbar > .navbar__links-container {
+    display: none;
+  }
+
+  .navbar__tablet_slide .navbar__links-container {
+    display: block;
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}
+
+.unsee {
+  display: none;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar__links-container {
+    height: 100%;
+  }
+  .navbar__links {
+    height: 100%;
+    justify-content: center;
+  }
+  .navbar,
+  .navbar__tablet_slide {
+    padding: 2rem 4rem;
+  }
+
+  .navbar__link {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar,
+  .navbar__tablet_slide {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar,
+  .navbar__tablet_slide {
+    padding: 2rem;
+  }
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar__authenticate {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.slide-bottom100 {
+  -webkit-animation: slide-bottom100 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-bottom100 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom100 {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom100 {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.slide-top100 {
+  -webkit-animation: slide-top100 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top100 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-top100 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+@keyframes slide-top100 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}

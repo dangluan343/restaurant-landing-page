@@ -1,0 +1,145 @@
+.footer {
+  position: relative;
+  margin-top: 30rem;
+  background: url("../../assets/bg.png") no-repeat;
+  background-position: center;
+}
+.footer .subheading {
+  text-align: center;
+}
+.footer__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: transparent;
+}
+
+.footer__top_container {
+  border: 1px solid var(--color-golden);
+  padding: 6.4rem 0;
+  background-color: var(--color-black);
+}
+.footer__update {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 2.4rem 0 6.4rem;
+}
+.footer__input {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  justify-content: center;
+}
+.footer__input_email {
+  border: 1px solid #f5efdb;
+  padding: 1.6rem 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  background-color: transparent;
+  flex: 1 1;
+  max-width: 50rem;
+
+  /* AAAAAA */
+
+  color: var(--color-grey);
+}
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 30rem;
+  text-align: center;
+}
+.footer__info {
+  flex: 0.27 1 25rem;
+}
+.footer__info_label {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 130%;
+  /* identical to box height, or 42px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+.footer__info_address {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+  margin: 2.4rem 0 0.8rem;
+
+  letter-spacing: 0.04em;
+
+  /* AAAAAA */
+
+  color: var(--color-grey);
+}
+.footer__info_phone {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+
+  /* AAAAAA */
+
+  color: var(--color-grey);
+}
+.footer__social {
+  flex: 0.27 1 30rem;
+}
+.footer__logo {
+  width: 30rem;
+  height: 8rem;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__promise {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* or 28px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 3.2rem 0 1.6rem;
+}
+.spoon {
+  margin-bottom: 1.5rem;
+}
+.footer__social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.footer__icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}

@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+/* tạo style cho * ( box, pad, mar, scrool)
++ tạo style cho body,html {}
++ tạo style cho section
++ tạo animation bằng animista.net
++ responsive cho section */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* transition: all 0.5s linear; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--color-black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: var(--font-base);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section__margin {
+  margin: 4rem 0;
+}
+
+.btn {
+  padding: 0.8rem 3.2rem;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+
+  color: #0c0b08;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--golden {
+  background-color: var(--color-golden);
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  .section__padding {
+    padding: 2rem;
+  }
+  .section__margin {
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 45%;
   }
 }

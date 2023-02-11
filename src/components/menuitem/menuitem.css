@@ -1,0 +1,44 @@
+.menu__item_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu__item__name {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.menu__item__line {
+  flex: 1 1;
+  border-bottom: 1px solid var(--color-white);
+}
+.menu__item__price {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+.menu__item__type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 175%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+  color: var(--color-grey);
+}
+@media screen and (max-width: 1200px) {
+  .menu__list {
+    width: 100%;
+  }
+}
